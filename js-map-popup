@@ -1,0 +1,10 @@
+	// Popup
+	$('.icon').click(function(){
+        $('.popup').not($(this).siblings('.popup')).removeClass('open');
+        $(this).siblings('.popup').toggleClass('open');
+    });
+
+	// Popup
+	$( '.closed' ).click( function () {
+		$( this ).parent().parent().removeClass( 'open' );
+	} );
